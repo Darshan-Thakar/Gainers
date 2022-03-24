@@ -1,0 +1,308 @@
+body{
+  background-color: white;
+}
+li{
+  list-style: none;
+}
+.viewers img{
+height: 100%;
+width: 100%;
+inset: 0px;
+
+  z-index: 1000;
+  object-fit: contain;
+  overflow: auto;
+  visibility: visible;
+
+  
+}
+body{
+  background-color: #ffffff;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+}
+@-webkit-keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes  fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.PostBox{
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  align-items: center;
+
+width: 94%;
+margin: auto;
+display: flex;
+flex-direction: column;
+color: #958b7b;
+margin: 0 0 0 8px;
+  border: none;
+  background-color: #fff;
+  box-shadow:  0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+
+}
+.postSender{
+width: 100%;
+text-align: left;
+align-items: center;
+display: flex;
+justify-content: space-evenly;
+
+
+}
+.postSender img{
+  border-radius: 50%;
+  height: 44px;
+  margin-top: 12px;
+  margin-left: 13px;
+  width: 44px;
+}
+.postSender button{
+
+margin-top: 12px;
+margin-left: 2px;
+border-radius: 35px;
+padding: 12px;
+width: 50px;
+background-color: white;
+  flex-grow: 0.87;
+
+  border: 1px solid rgba(0,0,0,0.16);
+  
+}
+
+
+.PostBox__icons img{
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+   margin-right: 5px;
+   margin-left: 3px;
+}
+.PostBox__icons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 22px;
+  margin-right: 30px;
+  width: 90%;
+  margin-bottom: 7px;
+
+
+}
+.PostBox__icons button{
+display: flex;
+align-items: center;
+line-height: 1.5;
+font-size: 14px;
+margin-left: 4px;
+border: none;
+background-color: white;
+color: #70b5f9;
+
+min-height: 38px;
+
+
+}
+.Article{
+  text-align: center;
+  overflow: visible;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  align-items: center;
+  background-color: white;
+width: 93%;
+height: fit-content;
+border: 1px solid rgba(0,0,0,0.15);
+margin: 12px auto;
+margin-right: 23px;
+
+
+
+}
+.SharedArticle a{
+  font-size: 16px;
+  color: black;
+  flex-grow: 1;
+  overflow: hidden;
+  margin-right: 12px;
+  display: flex;
+flex-direction: row;
+text-decoration: none;
+
+}
+.SharedArticle a img{
+  width: 48px;
+  height: 48px;
+}
+.SharedArticle a div{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+  margin-left: 8px;
+margin-top: 6px;
+text-align: left
+}
+.SharedArticle a img{
+  border-radius: 50%;
+}
+
+.SharedArticle a div span{
+  text-align: left;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 0.2px !important;
+}
+.SharedArticle a div span:nth-child(2){
+  color: rgba(0,0,0,0.6);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-top: -4px;
+  
+}
+.SharedArticle a  div  span:nth-child(3){
+  color: rgba(0,0,0,0.6);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-top: -3px;
+}
+.SharedArticle a div span:first-child{
+  font-size: 16px;
+  font-weight: 600;
+}
+.SharedArticle{
+  padding-right: 40px;
+  flex-wrap: nowrap;
+  padding: 1px 10px 0;
+  margin-bottom: 8px;
+  display: flex;
+
+  justify-content: space-between;
+
+} .SharedArticle div button img{
+  height: 32px ;
+  width: 32px;
+}
+.SharedArticle div button{
+  border: none;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+
+}
+.SharedArticle .dot{
+  left: 2px;
+  top: 2px;
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+text-align: left;
+  padding: 12px;
+  color: black;
+font-size: 16px;
+letter-spacing: 0.2px;
+
+}
+.desc img{
+  margin-top: 5px;
+  object-fit: cover;
+  height: 240px;
+  width:100%;
+
+}
+.comments{
+  text-align: left;
+  padding-left: 12px;
+  letter-spacing: 0.2px;
+}
+.social__react ul li button{
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: space-between;
+
+}
+.social__react ul li button img{
+  height: 22px;
+  width: 22px;
+  margin-right: 6px;
+}
+.social__react ul{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 12px;
+  margin-top: 18px;
+}
+  @media(min-width:986px){
+  .PostBox{
+      width: 41vw;
+      margin-right: 12px;
+      margin-left: 0;
+
+  }
+  .PostBox__icons{
+ 
+  }
+}
+
+@media(max-width:600px){
+  html{
+    font-size: 82%;
+    height: 100vh;
+    
+  }
+}
