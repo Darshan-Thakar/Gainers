@@ -1,0 +1,93 @@
+.profile__card{
+width: 26vw;
+height: fit-content;
+border-radius: 5px;
+margin-top: 2.2rem;
+margin-left: 2.2rem;
+    border: 1px solid rgba(0,0,0,0.06);
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 2.2rem;
+}
+ .profile__card .profile__top{
+     background-color: black;
+    height: 3.7rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+
+    justify-content: center;
+ }
+ #profile__image{
+     width: 3.2rem;
+     height: 3.2rem;
+     margin-top: 1.9rem;
+
+
+ }
+#profile-user-info{
+margin-top: 2.2rem;    
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#user-name{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.27rem;
+width: fit-content;
+display: block;
+margin: auto;
+color: rgba(0,0,0,0.9);
+
+}
+#user-bio{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    display: block;
+    width: fit-content;
+    font-weight: bold;
+
+
+    margin: 0.4rem  auto;
+    margin-left: 0.85rem;
+}
+.user__profile__details{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.user__profile__details .user__followers{
+display: flex;
+flex-direction:column;
+
+}
+.user__profile__details .user__followers span{
+    font-size: 1.0344rem;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.3rem;
+   color:rgb(8, 87, 8);
+   
+   font-weight: bold;
+}
+.user__profile__details .user__following{
+    display: flex;
+flex-direction:column;
+}
+.user__profile__details .user__following span{
+    font-size: 1.0344rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3rem;
+    color:rgb(8, 87, 8);
+      font-weight: bold;
+}
+.user__profile__details #user__articles{
+    display: flex;
+flex-direction:column;
+}
+.user__profile__details #user__articles span{
+    font-size: 1.0344rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3rem;
+    color:rgb(8, 87, 8);
+      font-weight: bold;
+}
