@@ -6,7 +6,7 @@ margin-top: 2.2rem;
 margin-left: 2.2rem;
     border: 1px solid rgba(0,0,0,0.06);
     background-color: rgb(255, 255, 255);
-    padding-bottom: 2.2rem;
+    padding-bottom: 0.9rem;
 }
  .profile__card .profile__top{
      background-color: black;
@@ -65,8 +65,9 @@ flex-direction:column;
     font-size: 1.0344rem;
    font-family: Arial, Helvetica, sans-serif;
    line-height: 1.3rem;
-   color:rgb(8, 87, 8);
-   
+   color:rgb(0, 0, 0);
+   width: fit-content;
+   margin: auto;
    font-weight: bold;
 }
 .user__profile__details .user__following{
@@ -77,8 +78,10 @@ flex-direction:column;
     font-size: 1.0344rem;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.3rem;
-    color:rgb(8, 87, 8);
+    color:rgb(0, 0, 0);
       font-weight: bold;
+      width: fit-content;
+      margin: auto;
 }
 .user__profile__details #user__articles{
     display: flex;
@@ -86,8 +89,38 @@ flex-direction:column;
 }
 .user__profile__details #user__articles span{
     font-size: 1.0344rem;
+    font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.3rem;
-    color:rgb(8, 87, 8);
+    color:rgb(0, 0, 0);
       font-weight: bold;
+      width: fit-content;
+      margin:auto;
+}
+
+.profile__logout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.profile__logout img{
+    width: 1.6rem;
+    height: 1.6rem;
+
+}
+.profile__logout span{
+    font-size: 1rem;
+    pointer-events: none;
+    color: #5f95c2;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.profile__logout button{
+    background:none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
