@@ -30,6 +30,10 @@ const userSchema=mongoose.Schema({
         minLength:9,
 
     },
+    bio:{
+        type:String,
+
+    },
     uniqueStringExpiryDate:{
         type:  Date,
        required:true
@@ -37,6 +41,16 @@ const userSchema=mongoose.Schema({
     verified:{
         type:Boolean,
         required:true
+    },
+    followers:{
+        type:Number,
+        
+    }
+    ,following:{
+        type:Number
+    },
+    articles:{
+    type:Number,
     }
     
     

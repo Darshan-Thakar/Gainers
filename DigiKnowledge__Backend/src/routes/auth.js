@@ -36,7 +36,10 @@ router.post('/auth/createUser',async(req,res)=>{
             password:securedPassword,
             verified:false,
             uniqueString:uniqueString,
-            uniqueStringExpiryDate:new Date(Date.now()+12223343)
+            uniqueStringExpiryDate:new Date(Date.now()+12223343),
+            followers:0,
+            following:0,
+            articles:0
         })
     const result=await user.save();
 
@@ -111,14 +114,15 @@ router.post("/auth/login",async(req,res)=>{
 //     }
 // })
 
-router.get("/auth/getUser",fetchUser,async(req,res)=>{
+router.get('/auth/getUser',fetchUser,async(req,res)=>{
     try {
         const userId=req.user.id;
-        const result=await User.findById(userId).select({name:1,email:1})
+        const result=await User.findById(userId).select({name:1,email:1,bio:1,followers:1,following:1,articles:1})
 
         res.status(200).send({success:true,user:result})
     } catch (error) {
-        
+        console.log(error)
+        res.status(500).send({success:false, error:error})
     }
 })
 module.exports=router;

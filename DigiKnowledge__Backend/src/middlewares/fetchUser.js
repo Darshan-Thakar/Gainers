@@ -8,7 +8,7 @@ const fetchUser=(req,res,next)=>{
         if(!token){
             res.status(401).send({success:false,error:"Unauthorized token"})
         }
-        
+        console.log(token)
         const data=jwt.verify(token,process.env.JWT__SECRET__KEY);
 
      if(!data){
@@ -20,7 +20,7 @@ res.status(401).send({success:false,error:"Unauthorized token"})
      next();
 
     } catch (err) {
-        res.status(500).send({success:false, error:error})
+        res.status(500).send({success:false, error:err})
     }
 
 
